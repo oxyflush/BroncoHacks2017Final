@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Funding Future</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- general CSS for nav -->
+    <link href="css/default_layout.css" rel="stylesheet">
+        
+    <link href="css/index.css" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet" type="text/css">
+            
+    <link href="img/logo_small.png" type="image/gif" rel="shortcut icon" />
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navcontainer" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div id="nav">
+                <a href="index.html"><img id="logo" src="img/logo_text2.png" alt="FundFuture"></a>
+                <a class="navbar-brand special" href="index.html">Explore</a>
+                <!-- reverse order for float right -->
+                <a class="navbar-brand f_right special" href="#"> Start a Campaign </a>
+                <a class="navbar-brand f_right" href="#"> Sign Up </a>
+                <a class="navbar-brand f_right" href="#"> Sponsors </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+<div id="top">
+    <h1> Trending </h1>
+    <div id="featured">
+        <img src="img/s1.jpg" alt="school1">
+    </div>
+    <div id="featured_des">
+        <div class="card h-100">
+            <h2 id="featured_money">Current Money</h2>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                </div>
+            </div>
+            <div class="card-block">
+                <h3 class="card-title"><a href="#">School Name</a></h3>
+                <h5 class="card-title">Reason for needing the money</h5>
+                <p class="card-text">Description/Story of school</p>
+                <center><button type="button" class="btn btn-success">Donate</button></center>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br> <br> <hr> <br>
+
+<div id="top_three">
+    <center><h2> Explore </h2> </center>
+    <br>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+        <a href="#"><img class="feature_img" src="http://placehold.it/700x400" alt=""></a>
+        <p class = "bottomleft" style = "color:white;">Current Money</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <span class="sr-only">70% Complete</span>
+            </div>
+        </div>
+        <div class="card-block">
+            <h3 class="card-title"><a href="#">School Name</a></h3>
+            <h5 class="card-title">Reason for needing the money</h5>
+            <p class="card-text">Description/Story of school</p>
+            <center><button type="button" class="btn btn-success">Donate</button></center>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+        
+        <a href="#"><img class="feature_img" src="http://placehold.it/700x400" alt=""></a>
+        <p class = "bottomleft" style = "color:white;">Current Money</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                <span class="sr-only">100% Complete</span>
+            </div>
+        </div>
+        <div class="card-block">
+            <h3 class="card-title"><a href="#">School Name</a></h3>
+            <h5 class="card-title">Reason for needing the money</h5>
+            <p class="card-text">Description/Story of school</p>
+            <center><button type="button" class="btn btn-success">Donate</button></center>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+        <a href="#"><img class="feature_img" src="http://placehold.it/700x400" alt=""></a>
+        <p class = "bottomleft" style = "color:white;">Current Money</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                <span class="sr-only">5% Complete</span>
+            </div>
+        </div>
+        <div class="card-block">
+            <h3 class="card-title"><a href="#">School Name</a></h3>
+            <h5 class="card-title">Reason for needing the money</h5>
+            <p class="card-text">Description/Story of school</p>
+            <center><button type="button" class="btn btn-success">Donate</button></center>
+        </div>
+    </div>
+</div>
+</div>
+
+<center><a href="explore.html"><button type="button" class="btn btn-success" id="see_more">See More</button></a></center>
+
+<br> <hr> <br>
+
+<div id="why_us">
+    <center><h2> Why Us?</h2></center>
+    <div class="why">
+        <h3> Why 1</h3>
+        
+    </div>
+    <br> <hr> <br>
+    <div class="why">
+        <h3> Why 2</h3>
+    </div>
+    <br> <hr> <br>
+    <div class="why">
+        <h3> Why 3</h3>
+    </div>
+</div>
+
+
+    </div>
+    <!-- /.container -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <p>Contact Us: contact@FundingFuture.org</p>
+                        <p>Address: 500 El Camino Real, Santa Clara, CA</p>
+                        <p>Copyright &copy; Bronco Hack 2017 FundingFuture</p>
+                    </center>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>

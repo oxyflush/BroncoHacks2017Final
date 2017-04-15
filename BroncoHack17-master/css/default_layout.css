@@ -1,0 +1,58 @@
+body{
+    padding-top:100px;
+    background-color:#f7fcfa;
+    font-family:"News Cycle", Verdana, sans-serif;
+}
+
+#navcontainer{
+    background-color: white;
+    border-color:#105842;
+    box-shadow: 0 1px 1px 1px hsla(136, 39%, 85%, 0.45)
+}
+
+#nav{
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+}
+
+#nav a{
+    color: #105842;
+    margin:10px;
+    padding-bottom:0px;
+}
+
+#nav a:hover{
+    background-color:#417505;
+    color:white;
+}
+
+
+#logo{
+    float:left;
+    margin-top:3px;
+    padding: 12px 10px;
+    height: 60px;
+}
+
+.f_right{
+    float: right;
+}
+
+#nav a.special{
+    background-color:#417505;
+    color: white;
+}
+
+#nav a.special:hover{
+    background-color:white;
+    color:#105842;
+}
+
+
+footer{
+    padding: 20px 0px;
+    background-color: #417505;
+    color: white;
+}
+

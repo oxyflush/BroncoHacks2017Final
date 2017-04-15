@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="Text/JavaScript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <h2>PHP, jQuery, javascrpt and MySQL connection</h2>
+        <script type="Text/JavaScript" lanague="javascrpt" src="https://code.jquery.com/jquery-3.2.1.min.js">
+            $(function ()
+            {
+                $("#click").click(function () {
+                    $("#test").toggle();
+                });
+                $.ajax({
+                    url: 'dbconnect.php',
+                    data: "",
+                    
+                    dataType: 'json',
+                    success: function(data)
+                    {
+                        var pid =  data[0];
+                        var vname = data[1];
+                        $('#output').html("<b>pid: </b>"+pid+"<b> name: </b>"+vname);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

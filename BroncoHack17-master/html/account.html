@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Funding Future</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- general CSS for nav -->
+    <link href="css/default_layout.css" rel="stylesheet">
+        
+    <link href="css/account.css" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet" type="text/css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet" type="text/css">
+            
+    <link href="img/logo_small.png" type="image/gif" rel="shortcut icon" />
+    
+    <script src="js/account.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navcontainer" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div id="nav">
+                <a href="index.html"><img id="logo" src="img/logo_text2.png" alt="FundFuture"></a>
+                <a class="navbar-brand special" href="index.html">Explore</a>
+                <!-- reverse order for float right -->
+                <a class="navbar-brand f_right special" href="#"> Start a Campaign </a>
+                <a class="navbar-brand f_right" href="#"> Sign Up </a>
+                <a class="navbar-brand f_right" href="#"> Sponsors </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <br>
+            <h2> <b> MY INFO </b></h2>
+            <hr>
+            <i class="fa fa-user-circle-o" style="font-size:36px"> </i>
+            
+            <p> Name <i class="fa fa-leaf"></i> </p>
+            
+            <p> Number of Trees Adopted <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> <span class="glyphicon glyphicon-tree-conifer"></span> </p>
+            <p> Days Active <i class="fa fa-leaf"></i> </p>
+            <button style="font-size:16px" class="btn btn-success"> Check Today</button>
+        </div>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'campaign')"> Campaign </button>
+            <button class="tablinks" onclick="openTab(event, 'donation')"> Donation </button>
+        </div>
+        <div id="campaign" class="tabcontent card">
+            <div class="sub_campaign">
+                <div>
+                <h3 class="campaign_name"> Library Reconstruction </h3>
+                </div>
+                <button> Post </button>
+                <button> Edit </button>
+                <br>
+            </div>
+                <div class="campaign_progress">
+                <p class="campaign_ratio"> 12000/24000 </p>
+                <p class="campaign_support">2014 people supported </p>
+                <p class="campaign_percent"> 50% done</p>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div id="donation" class="tabcontent">
+            <div class="sub_donation">
+                <div>
+                    <h3 class="donation_name"> Library Reconstruction </h3>
+                </div>
+                <button> Post </button>
+                <button> Edit </button>
+                <br>
+            </div>
+            <div class="donation_progress">
+                <p class="donation_ratio"> 12000/24000 </p>
+                <p class="donation_support">2014 people supported </p>
+                <p class="donation_percent"> 50% done</p>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- /.container -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <p>Contact Us: contact@FundingFuture.org</p>
+                        <p>Address: 500 El Camino Real, Santa Clara, CA</p>
+                        <p>Copyright &copy; Bronco Hack 2017 FundingFuture</p>
+                    </center>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
